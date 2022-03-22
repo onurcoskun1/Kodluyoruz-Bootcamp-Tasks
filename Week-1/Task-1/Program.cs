@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Exercices_1
+namespace Task_1
 {
     class Program
     {
@@ -26,7 +26,7 @@ namespace Exercices_1
             double A1= 0.621;
             double A2= -1.179;
             double A3= -0.081;
-            double log=Math.Log(Rhypo, 10);
+            double log=Math.Log10(Rhypo);
             double Vv=Vp30/Vs30;
 
 
@@ -35,7 +35,7 @@ namespace Exercices_1
             double formula1= Math.Pow(10, top);
             double a= formula1*ZE;
 
-            Console.WriteLine(a);
+            Console.WriteLine("Yatay yer ivmesi: " + a);
 
 
 

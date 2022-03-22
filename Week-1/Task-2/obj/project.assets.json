@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Poseidon\\Desktop\\Bootcamp Exercises\\Week-1\\Task-1\\Task-1.csproj",
-      "projectName": "Task-1",
-      "projectPath": "C:\\Users\\Poseidon\\Desktop\\Bootcamp Exercises\\Week-1\\Task-1\\Task-1.csproj",
+      "projectUniqueName": "C:\\Users\\Poseidon\\Desktop\\Bootcamp Exercises\\Week-1\\Task-2\\Task-2.csproj",
+      "projectName": "Task-2",
+      "projectPath": "C:\\Users\\Poseidon\\Desktop\\Bootcamp Exercises\\Week-1\\Task-2\\Task-2.csproj",
       "packagesPath": "C:\\Users\\Poseidon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Poseidon\\Desktop\\Bootcamp Exercises\\Week-1\\Task-1\\obj\\",
+      "outputPath": "C:\\Users\\Poseidon\\Desktop\\Bootcamp Exercises\\Week-1\\Task-2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
