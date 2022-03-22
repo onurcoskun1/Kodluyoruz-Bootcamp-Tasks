@@ -4,6 +4,23 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # User-specific files
+/build/
+*.suo
+.user
+_ReSharper./
+*.sdf
+bin/
+obj/
+Debug/
+Release/
+*.opensdf
+*.tlog
+*.log
+TestResult.xml
+*.VisualState.xml
+Version.cs
+Version.h
+Version.cpp
 *.rsuser
 *.suo
 *.user
@@ -69,6 +86,7 @@ ScaffoldingReadMe.txt
 StyleCopReport.xml
 
 # Files built by Visual Studio
+*.bin
 *_i.c
 *_p.c
 *_h.h
@@ -93,7 +111,7 @@ StyleCopReport.xml
 *.tlog
 *.vspscc
 *.vssscc
-.builds
+*.builds
 *.pidb
 *.svclog
 *.scc
