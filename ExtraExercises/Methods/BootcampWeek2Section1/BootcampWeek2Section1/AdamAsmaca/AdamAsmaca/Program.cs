@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Week_2
+namespace AdamAsmaca
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
