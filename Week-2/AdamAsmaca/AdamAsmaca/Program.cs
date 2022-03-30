@@ -22,8 +22,8 @@ namespace AdamAsmaca
 
             bool isGameOver = false;
             string[] words = new string[] { "ayna", "masa", "tarantula", "endoplazmikretikulum", "kamikaze" };
-            
-            
+
+
             while (!isGameOver)
             {
                 string selectedWord = chooseWord(words);
@@ -31,32 +31,50 @@ namespace AdamAsmaca
 
                 Console.WriteLine(puzzle);
                 bool isWordFinding = false;
-                while (!isWordFinding)
+                int life = 2;
+                while (!isWordFinding && life>0)
                 {
-                    Console.WriteLine("Enter a letter: ");
-                    string letter = Console.ReadLine();
-                    bool isLetterExistInWord = checkLetterInWord(selectedWord, letter);
-                    if (isLetterExistInWord)
-                    {
-                        puzzle = replaceStarToLetter(selectedWord, puzzle, letter);
-                        Console.WriteLine(puzzle);
-                    }
                     
-                    Console.WriteLine("Do you want to guess the word? (Y/N) ");
-                    string answerForGuess = Console.ReadLine();
-                    if (answerForGuess.ToUpper() == "Y")
+                    do
                     {
-                        Console.WriteLine("What do you think about this word dude? : ");
-                        string guess = Console.ReadLine();
-                        isWordFinding = compareGuessSelectedWord(guess, selectedWord);
+                        Console.WriteLine("Enter a letter: ");
+                        string letter = Console.ReadLine();
+                        bool isLetterExistInWord = checkLetterInWord(selectedWord, letter);
+                        if (isLetterExistInWord)
+                        {
+                            puzzle = replaceStarToLetter(selectedWord, puzzle, letter);
+                            Console.WriteLine(puzzle);
+                        }
 
-                    }
+                        Console.WriteLine("Do you want to guess the word? (Y/N) ");
+                        string answerForGuess = Console.ReadLine();
+                        if (answerForGuess.ToUpper() == "Y")
+                        {
+                            Console.WriteLine("What do you think about this word dude? : ");
+                            string guess = Console.ReadLine();
+
+                            if (compareGuessSelectedWord(guess, selectedWord))
+                            {
+                                isWordFinding = true;
+                                Console.WriteLine("Congratz!");
+                            }
+                            else
+                            {
+                                life--;
+                                Console.WriteLine("Oops! Try again dude");
+                                Console.WriteLine($"Your life = {life}");
+                                
+                            }
+                            
+                        } 
+                    } while (isWordFinding);
                 }
+                Console.WriteLine("********GAME OVER********");
+
                 Console.WriteLine("Do you want to play smart boy/girl? (Y/N)");
                 isGameOver = Console.ReadLine().ToUpper() == "N";
 
             }
-            
 
         }
 
